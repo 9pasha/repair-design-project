@@ -1,0 +1,50 @@
+.header {
+    max-width: 1438px;
+    min-height: 83px;
+    width: 100%;
+    height: auto;
+    background-color: $background-color;
+    position: relative;
+    @include flex;
+    .heading {
+        color: #E3B873;
+        font-family: "FuturaDemic";
+        font-size: 0.972vw;
+        word-spacing: 5px;
+        position: relative;
+        left: 5.7%;
+        top: 6.36%;
+        max-width: 182px;
+        height: auto;
+    }
+    .nav {
+        width: 41%;
+        max-width: 580px;
+        min-height: 14px;
+        height: auto;
+        position: relative;
+        top: 1px;
+        @include flex;
+    }
+    .nav__item {
+        color: $white-color;
+        font-family: 'FuturaBookC';
+        font-size: 0.972vw;
+    }
+    .nav__item-6 {
+        margin-right: 4px;
+    }
+    .call-request-block {
+        width: 29.5%;
+        display: flex;
+        min-height: 38px;
+        @include flex;
+    }
+    .tel-num {
+        color: #E3B873;
+        font-family: "FuturaDemic";
+        text-decoration: underline;
+        font-size: 0.972vw;
+    }
+}
+

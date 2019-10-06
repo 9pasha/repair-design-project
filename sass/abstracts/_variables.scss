@@ -1,0 +1,19 @@
+$background-color: #131313;
+$elements-color: #E3B873;
+$white-color: #FFFFFF;
+
+@mixin flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+@font-face {
+    font-family: 'FuturaDemic';
+    src: url('/assets/fonts/FuturaDemiCRegular.otf');
+}
+
+@font-face {
+    font-family: 'FuturaBookC';
+    src: url('/assets/fonts/futurabookc.otf');
+}
