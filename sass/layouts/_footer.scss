@@ -8,3 +8,12 @@
         background-color: $background-color;
     }
 }
+
+@media screen {
+    .footer {
+        @media (max-width: $mobile) {
+            max-width: 375px;
+            min-height: 468px;
+        }
+    }
+}

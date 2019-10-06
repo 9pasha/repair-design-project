@@ -124,6 +124,12 @@ body {
   font-size: 0.972vw;
 }
 
+@media screen and (max-width: 375px) {
+  .header {
+    max-width: 375px;
+    min-height: 57px;
+  }
+}
 .main {
   width: 100%;
   min-height: 9943px;
@@ -157,6 +163,12 @@ body {
   background-color: #FFFFFF;
 }
 
+@media screen and (max-width: 375px) {
+  .main {
+    max-width: 375px;
+    min-height: 8271px;
+  }
+}
 .footer {
   width: 100%;
   min-height: 953.9px;
@@ -167,6 +179,12 @@ body {
   background-color: #131313;
 }
 
+@media screen and (max-width: 375px) {
+  .footer {
+    max-width: 375px;
+    min-height: 468px;
+  }
+}
 .call-btn__inner {
   position: relative;
   right: 6.95%;

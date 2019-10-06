@@ -2,6 +2,8 @@ $background-color: #131313;
 $elements-color: #E3B873;
 $white-color: #FFFFFF;
 
+$mobile: 375px;
+
 @mixin flex {
     display: flex;
     justify-content: space-between;

@@ -48,3 +48,12 @@
     }
 }
 
+@media screen {
+    .header {
+        @media (max-width: $mobile) {
+            max-width: 375px;
+            min-height: 57px;
+        }
+    }
+}
+

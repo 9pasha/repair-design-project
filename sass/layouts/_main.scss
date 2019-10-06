@@ -35,3 +35,12 @@
         background-color: $white-color;
     }
 }
+
+@media screen {
+    .main {
+        @media (max-width: $mobile) {
+            max-width: 375px;
+            min-height: 8271px;
+        }
+    }
+}
