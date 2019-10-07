@@ -6,6 +6,7 @@
     background-color: $background-color;
     position: relative;
     @include flex;
+
     .heading {
         color: #E3B873;
         font-family: "FuturaDemic";
@@ -17,6 +18,7 @@
         max-width: 182px;
         height: auto;
     }
+
     .nav {
         width: 41%;
         max-width: 580px;
@@ -25,21 +27,29 @@
         position: relative;
         top: 1px;
         @include flex;
+
+        .active-itm {
+            color: $elements-color;
+        }
     }
+
     .nav__item {
         color: $white-color;
         font-family: 'FuturaBookC';
         font-size: 0.972vw;
     }
+
     .nav__item-6 {
         margin-right: 4px;
     }
+
     .call-request-block {
         width: 29.5%;
         display: flex;
         min-height: 38px;
         @include flex;
     }
+
     .tel-num {
         color: #E3B873;
         font-family: "FuturaDemic";
