@@ -216,10 +216,6 @@ body {
 .main .main-content .btn-block__cost-btn {
   width: 47.5%;
   height: 100%;
-  box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
-  border-radius: 2px;
-  border: none;
-  background-color: #E3B873;
 }
 .main .main-content .btn-block__calc-span, .main .main-content .btn-block__submit-text {
   font-family: "FuturaDemic";
@@ -395,11 +391,120 @@ body {
 }
 
 .submit-form {
-  width: 70%;
-  height: 90px;
+  width: 52%;
+  height: 110px;
+  left: 24%;
+  top: 2392px;
   position: absolute;
-  top: 2000px;
-  left: 30%;
+}
+.submit-form .main-wrapper {
+  width: 100%;
+  height: 52px;
+  display: flex;
+  justify-content: space-between;
+}
+.submit-form .main-wrapper .name-wrapper {
+  margin-left: 0.7%;
+}
+.submit-form .main-wrapper .phone-wrapper {
+  margin-left: 1%;
+}
+.submit-form .main-wrapper .name-wrapper, .submit-form .main-wrapper .phone-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+.submit-form .main-wrapper .name-wrapper .submit-form__text, .submit-form .main-wrapper .phone-wrapper .submit-form__text {
+  font-size: 15px;
+  color: rgba(54, 54, 54, 0.5);
+  font-family: "FuturaBookC";
+}
+.submit-form .main-wrapper .name-wrapper .submit-form__input, .submit-form .main-wrapper .phone-wrapper .submit-form__input {
+  width: 231px;
+  height: 27px;
+  border: 1px solid rgba(54, 54, 54, 0.3);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  margin-top: 2%;
+}
+.submit-form .main-wrapper .name-wrapper .submit-form__input::placeholder, .submit-form .main-wrapper .phone-wrapper .submit-form__input::placeholder {
+  font-family: "FuturaBookC";
+  font-size: 18px;
+  color: #363636;
+  position: relative;
+  bottom: 3px;
+}
+.submit-form .main-wrapper .submit-form__btn-text {
+  font-size: 15px;
+  color: #FFFFFF;
+  font-family: "FuturaDemic";
+}
+.submit-form__btn {
+  width: 25.9%;
+}
+.submit-form .bottom-block {
+  width: 100%;
+  height: 19px;
+  margin-top: 32px;
+  text-align: center;
+}
+.submit-form .bottom-block .container {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-left: 31.5%;
+}
+.submit-form .bottom-block .container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.submit-form .bottom-block .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  background-color: #eee;
+}
+.submit-form .bottom-block .container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+.submit-form .bottom-block .container input:checked ~ .checkmark {
+  background-color: #E3B873;
+}
+.submit-form .bottom-block .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.submit-form .bottom-block .container input:checked ~ .checkmark:after {
+  display: block;
+}
+.submit-form .bottom-block .container .checkmark:after {
+  left: 6px;
+  top: 3px;
+  width: 3px;
+  height: 6px;
+  border-radius: 1px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.submit-form .bottom-block__span {
+  font-size: 16px;
+  font-family: "FuturaBookC";
+  color: #181818;
+  padding-left: 3%;
 }
 
 @media screen and (max-width: 375px) {
@@ -437,6 +542,13 @@ body {
   box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
   border-radius: 2px;
   border: none;
+}
+
+.orange-btn {
+  box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+  border-radius: 2px;
+  border: none;
+  background-color: #E3B873;
 }
 
 /*# sourceMappingURL=style.css.map */

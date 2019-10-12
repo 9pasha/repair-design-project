@@ -83,10 +83,6 @@
             &__cost-btn {
                 width: 47.5%;
                 height: 100%;
-                box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
-                border-radius: 2px;
-                border: none; 
-                background-color: $elements-color;
             }
 
             &__calc-span, &__submit-text {
@@ -295,6 +291,134 @@
     left: 24%;
     top: 2392px;
     position: absolute;
+
+    .main-wrapper {
+        width: 100%;
+        height: 52px;
+        display: flex;
+        justify-content: space-between;
+
+        .name-wrapper {
+            margin-left: 0.7%;
+        }
+
+        .phone-wrapper {
+            margin-left: 1%;
+        }
+
+        .name-wrapper, .phone-wrapper {
+            display: flex;
+            flex-direction: column;
+            width: 30%;
+
+            .submit-form__text {
+                font-size: 15px;
+                color: $gray-txt;
+                font-family: 'FuturaBookC';
+            }
+
+            .submit-form__input {
+                width: 231px;
+                height: 27px;
+                border: 1px solid rgba(54, 54, 54, 0.3);
+                border-top: none;
+                border-left: none;
+                border-right: none;
+                margin-top: 2%;
+
+                &::placeholder {
+                    font-family: 'FuturaBookC';
+                    font-size: 18px;
+                    color: $black-txt;
+                    position: relative;
+                    bottom: 3px;
+                }
+            }
+        }
+
+        .submit-form__btn-text {
+            font-size: 15px;
+            color: $white-color;
+            font-family: 'FuturaDemic';
+        }
+    }
+
+    &__btn {
+        width: 25.9%;
+    }
+
+    .bottom-block {
+        width: 100%;
+        height: 19px;
+        margin-top: 32px;
+        text-align: center;
+
+        .container {
+            display: block;
+            position: relative;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            margin-left: 31.5%;
+        }
+          
+            .container input {
+                position: absolute;
+                opacity: 0;
+                cursor: pointer;
+                height: 0;
+                width: 0;
+            }
+          
+            .checkmark {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 18px;
+                width: 18px;
+                background-color: #eee;
+            }
+
+            .container:hover input ~ .checkmark {
+                background-color: #ccc;
+            }
+
+            .container input:checked ~ .checkmark {
+                background-color: $elements-color;
+            }
+
+            .checkmark:after {
+                content: "";
+                position: absolute;
+                display: none;
+            }
+
+            .container input:checked ~ .checkmark:after {
+                display: block;
+            }
+
+            .container .checkmark:after {
+                left: 6px;
+                top: 3px;
+                width: 3px;
+                height: 6px;
+                border-radius: 1px;;
+                border: solid white;
+                border-width: 0 3px 3px 0;
+                -webkit-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                transform: rotate(45deg);
+            }
+
+        &__span {
+            font-size: 16px;
+            font-family: 'FuturaBookC';  
+            color: #181818;
+            padding-left: 3%;
+        }
+    }
 }
 
 @media screen {
