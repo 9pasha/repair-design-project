@@ -421,6 +421,104 @@
     }
 }
 
+.types-of-repair {
+    position: absolute;
+    top: 2645px;
+    left: 8.8%;
+    width: 82.75%;
+    height: 521px;
+    text-align: center;
+
+    &__heading {
+        font-size: 20px;
+        font-family: 'YesevaOne';
+        color: #181818;
+    }
+
+    &__img-block {
+        margin-top: 1.3%;
+    }
+
+    .examples {
+        width: 100%;
+        position: relative;
+        top: 5.7%;
+        @include flex;
+        
+        &__itm {
+            width: 31.8%;
+            height: 421px;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+
+            &-1 {
+                background-image: url('/assets/img/desktop/blue-room.png');
+            }
+
+            &-2 {
+                background-image: url('/assets/img/desktop/white-room.png');
+            }
+
+            &-3 {
+                background-image: url('/assets/img/desktop/dark-room.png');
+            }
+
+            &__about {
+                width: 84.1%;
+                height: 285px;
+                top: 69.5%;
+                position: relative;
+                left: 8.3%;
+                box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+                background-color: $white-color;
+
+                &__heading {
+                    text-align: left;
+                    font-size: 18px;
+                    font-family: 'YesevaOne';
+                    color: $black-txt;
+                    position: relative;
+                    width: 50%;
+                    top: 9%;
+                    left: 31px;
+                }
+
+                &__ol {
+                    width: 100%;
+                    height: 178px;
+                    top: 37px;
+                    position: relative;
+                    list-style-type: circle;
+                    text-align: left;
+
+                    .itm {
+                        font-size: 15px;
+                        line-height: 25px;
+                        color: #959595;
+                        font-family: 'FuturaBookC';
+                    }
+                }
+
+                &__btn {
+                    width: 68.5%;
+                    height: 54px;
+                    position: relative;
+                    top: 65px;
+                    left: -15.4%;
+
+                    .cost-btn-txt {
+                        font-family: 'YesevaOne';
+                        color: $white-color;
+                        font-size: 18px;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
 @media screen {
     .main {
         @media (max-width: $mobile) {

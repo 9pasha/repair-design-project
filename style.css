@@ -507,6 +507,92 @@ body {
   padding-left: 3%;
 }
 
+.types-of-repair {
+  position: absolute;
+  top: 2645px;
+  left: 8.8%;
+  width: 82.75%;
+  height: 521px;
+  text-align: center;
+}
+.types-of-repair__heading {
+  font-size: 20px;
+  font-family: "YesevaOne";
+  color: #181818;
+}
+.types-of-repair__img-block {
+  margin-top: 1.3%;
+}
+.types-of-repair .examples {
+  width: 100%;
+  position: relative;
+  top: 5.7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.types-of-repair .examples__itm {
+  width: 31.8%;
+  height: 421px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.types-of-repair .examples__itm-1 {
+  background-image: url("/assets/img/desktop/blue-room.png");
+}
+.types-of-repair .examples__itm-2 {
+  background-image: url("/assets/img/desktop/white-room.png");
+}
+.types-of-repair .examples__itm-3 {
+  background-image: url("/assets/img/desktop/dark-room.png");
+}
+.types-of-repair .examples__itm__about {
+  width: 84.1%;
+  height: 285px;
+  top: 69.5%;
+  position: relative;
+  left: 8.3%;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+  background-color: #FFFFFF;
+}
+.types-of-repair .examples__itm__about__heading {
+  text-align: left;
+  font-size: 18px;
+  font-family: "YesevaOne";
+  color: #363636;
+  position: relative;
+  width: 50%;
+  top: 9%;
+  left: 31px;
+}
+.types-of-repair .examples__itm__about__ol {
+  width: 100%;
+  height: 178px;
+  top: 37px;
+  position: relative;
+  list-style-type: circle;
+  text-align: left;
+}
+.types-of-repair .examples__itm__about__ol .itm {
+  font-size: 15px;
+  line-height: 25px;
+  color: #959595;
+  font-family: "FuturaBookC";
+}
+.types-of-repair .examples__itm__about__btn {
+  width: 68.5%;
+  height: 54px;
+  position: relative;
+  top: 65px;
+  left: -15.4%;
+}
+.types-of-repair .examples__itm__about__btn .cost-btn-txt {
+  font-family: "YesevaOne";
+  color: #FFFFFF;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
 @media screen and (max-width: 375px) {
   .main {
     max-width: 375px;
