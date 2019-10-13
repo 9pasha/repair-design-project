@@ -1,4 +1,8 @@
 @font-face {
+  font-family: "FuturaMediumC";
+  src: url("/assets/fonts/FuturaMediumCRegular.otf");
+}
+@font-face {
   font-family: "FuturaDemic";
   src: url("/assets/fonts/FuturaDemiCRegular.otf");
 }
@@ -9,6 +13,10 @@
 @font-face {
   font-family: "YesevaOne";
   src: url("/assets/fonts/YesevaOne-Regular_v2.otf");
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("/assets/fonts/ProximaNova-Regular.ttf");
 }
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -422,18 +430,7 @@ body {
 .submit-form .main-wrapper .name-wrapper .submit-form__input, .submit-form .main-wrapper .phone-wrapper .submit-form__input {
   width: 231px;
   height: 27px;
-  border: 1px solid rgba(54, 54, 54, 0.3);
-  border-top: none;
-  border-left: none;
-  border-right: none;
   margin-top: 2%;
-}
-.submit-form .main-wrapper .name-wrapper .submit-form__input::placeholder, .submit-form .main-wrapper .phone-wrapper .submit-form__input::placeholder {
-  font-family: "FuturaBookC";
-  font-size: 18px;
-  color: #363636;
-  position: relative;
-  bottom: 3px;
 }
 .submit-form .main-wrapper .submit-form__btn-text {
   font-size: 15px;
@@ -450,55 +447,7 @@ body {
   text-align: center;
 }
 .submit-form .bottom-block .container {
-  display: block;
-  position: relative;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
   margin-left: 31.5%;
-}
-.submit-form .bottom-block .container input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
-}
-.submit-form .bottom-block .checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 18px;
-  width: 18px;
-  background-color: #eee;
-}
-.submit-form .bottom-block .container:hover input ~ .checkmark {
-  background-color: #ccc;
-}
-.submit-form .bottom-block .container input:checked ~ .checkmark {
-  background-color: #E3B873;
-}
-.submit-form .bottom-block .checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
-.submit-form .bottom-block .container input:checked ~ .checkmark:after {
-  display: block;
-}
-.submit-form .bottom-block .container .checkmark:after {
-  left: 6px;
-  top: 3px;
-  width: 3px;
-  height: 6px;
-  border-radius: 1px;
-  border: solid white;
-  border-width: 0 3px 3px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
 }
 .submit-form .bottom-block__span {
   font-size: 16px;
@@ -511,6 +460,7 @@ body {
   position: absolute;
   top: 2645px;
   left: 8.8%;
+  max-width: 1440px;
   width: 82.75%;
   height: 521px;
   text-align: center;
@@ -572,12 +522,17 @@ body {
   position: relative;
   list-style-type: circle;
   text-align: left;
+  list-style-position: inside;
 }
 .types-of-repair .examples__itm__about__ol .itm {
+  padding-left: 10%;
   font-size: 15px;
   line-height: 25px;
   color: #959595;
   font-family: "FuturaBookC";
+}
+.types-of-repair .examples__itm__about__ol .itm__span {
+  margin-left: -3%;
 }
 .types-of-repair .examples__itm__about__btn {
   width: 68.5%;
@@ -587,6 +542,285 @@ body {
   left: -15.4%;
 }
 .types-of-repair .examples__itm__about__btn .cost-btn-txt {
+  font-family: "YesevaOne";
+  color: #FFFFFF;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.free-services {
+  max-width: 1440px;
+  position: absolute;
+  top: 3527px;
+  width: 100%;
+  height: 681px;
+}
+.free-services__form {
+  position: relative;
+  width: 35%;
+  height: 509px;
+  top: 52px;
+  left: 59.8%;
+  text-align: center;
+  background-color: #131313;
+  border: 1px solid rgba(255, 255, 255, 0.015);
+}
+.free-services__form__heading {
+  font-size: 20px;
+  font-family: "FuturaDemic";
+  color: #FFFFFF;
+  position: relative;
+  top: 23px;
+  line-height: 25px;
+}
+.free-services__form__fields {
+  position: relative;
+  width: 100%;
+  height: 246px;
+  top: 63px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.free-services__form__fields .el-block {
+  width: 81%;
+  height: 52px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  text-align: left;
+}
+.free-services__form__fields .el-block__text {
+  color: #FFFFFF;
+  font-family: "FuturaBookC";
+  font-size: 15px;
+  align-self: flex-start;
+}
+.free-services__form__fields .el-block__input {
+  background: initial;
+  width: 100%;
+  height: 25px;
+}
+.free-services__form__fields .el-block__input::placeholder {
+  font-family: "FuturaMediumC";
+  color: #FFFFFF;
+  bottom: 6px;
+}
+.free-services__form .free-services__form__bottom-block {
+  position: relative;
+  width: 70%;
+  top: 77px;
+  left: 9.5%;
+}
+.free-services__form .checkbox-container__span {
+  font-size: 16px;
+  color: #FFFFFF;
+  font-family: "FuturaBookC";
+  margin-left: -12%;
+}
+.free-services__form__btn {
+  position: relative;
+  top: 117px;
+  left: 19.4%;
+  width: 42.4%;
+  height: 51px;
+}
+.free-services__form__btn__txt {
+  font-size: 13px;
+  font-family: "FuturaDemic";
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+.free-services .save-cost {
+  position: relative;
+  width: 30%;
+  height: 110px;
+  display: flex;
+  top: 79px;
+  left: 56.6%;
+}
+.free-services .save-cost__span {
+  font-size: 20px;
+  line-height: 25px;
+  text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
+  color: #E3B873;
+  font-family: "FuturaDemic";
+  margin-left: 1%;
+  margin-top: 4%;
+  height: 50px;
+}
+
+.styles {
+  max-width: 1440px;
+  width: 100%;
+  height: 864px;
+  background-image: url("/assets/img/desktop/styles.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top: 4440px;
+  z-index: 10;
+}
+.styles__gradient {
+  max-width: 1440px;
+  width: 100%;
+  height: 864px;
+  position: absolute;
+  background: linear-gradient(120.96deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.9) 100%);
+}
+.styles__heading {
+  font-size: 27px;
+  line-height: 37px;
+  text-transform: uppercase;
+  font-family: "YesevaOne";
+  color: #E3B873;
+  position: relative;
+  width: 20%;
+  top: 15.8%;
+  left: 8.9%;
+}
+.styles__ul {
+  position: relative;
+  width: 20%;
+  top: 20%;
+  left: 8.9%;
+}
+.styles__ul__itm {
+  margin-top: 5.5%;
+  color: #FFFFFF;
+  font-size: 20px;
+  line-height: 34px;
+  font-family: "Proxima Nova";
+}
+.styles__ul__itm_active {
+  color: #E3B873;
+  text-decoration: underline;
+}
+.styles__img {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.styles__img-col-1 {
+  height: 438px;
+  width: 24.4%;
+  top: -658px;
+  left: 42.9%;
+}
+.styles__img-col-2 {
+  top: -1168px;
+  left: 70.5%;
+  width: 24.4%;
+  height: 640px;
+}
+
+.design-project {
+  position: absolute;
+  max-width: 1440px;
+  width: 100%;
+  height: 900px;
+  top: 5460px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.design-project__heading {
+  color: #181818;
+  font-size: 20px;
+  font-family: "YesevaOne";
+  width: 15%;
+  margin-left: 44.5%;
+}
+.design-project__img {
+  top: 17px;
+  position: relative;
+  margin-left: 4%;
+}
+.design-project__p {
+  font-size: 20px;
+  line-height: 27px;
+  font-family: "FuturaBookC";
+  color: #363636;
+  margin-left: 4%;
+  position: relative;
+  top: 34px;
+}
+.design-project__examples {
+  position: relative;
+  top: 81px;
+  width: 85.9%;
+  left: 9.1%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.design-project .examples__itm {
+  width: 31.8%;
+  height: 421px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.design-project .examples__itm-1 {
+  order: 1;
+  background-image: url("/assets/img/desktop/blue-room.png");
+}
+.design-project .examples__itm-2 {
+  order: 3;
+  background-image: url("/assets/img/desktop/white-room.png");
+}
+.design-project .examples__itm-3 {
+  order: 2;
+  background-image: url("/assets/img/desktop/dark-room.png");
+}
+.design-project .examples__itm__about {
+  width: 84.1%;
+  height: 285px;
+  top: 69.5%;
+  position: relative;
+  left: 8.3%;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+  background-color: #FFFFFF;
+}
+.design-project .examples__itm__about__heading {
+  text-align: left;
+  font-size: 18px;
+  font-family: "YesevaOne";
+  color: #363636;
+  position: relative;
+  width: 50%;
+  top: 9%;
+  left: 31px;
+}
+.design-project .examples__itm__about__ol {
+  width: 100%;
+  height: 178px;
+  top: 37px;
+  position: relative;
+  list-style-type: circle;
+  text-align: left;
+  list-style-position: inside;
+}
+.design-project .examples__itm__about__ol .itm {
+  padding-left: 10%;
+  font-size: 15px;
+  line-height: 25px;
+  color: #959595;
+  font-family: "FuturaBookC";
+}
+.design-project .examples__itm__about__ol .itm__span {
+  margin-left: -3%;
+}
+.design-project .examples__itm__about__btn {
+  width: 68.5%;
+  height: 54px;
+  position: relative;
+  top: 65px;
+  left: -15.4%;
+}
+.design-project .examples__itm__about__btn .cost-btn-txt {
   font-family: "YesevaOne";
   color: #FFFFFF;
   font-size: 18px;
@@ -635,6 +869,78 @@ body {
   border-radius: 2px;
   border: none;
   background-color: #E3B873;
+}
+
+.container {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  background-color: #eee;
+}
+
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.container input:checked ~ .checkmark {
+  background-color: #E3B873;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  left: 6px;
+  top: 3px;
+  width: 3px;
+  height: 6px;
+  border-radius: 1px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.input-border-bottom {
+  border: 1px solid rgba(54, 54, 54, 0.3);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+.input-border-bottom::placeholder {
+  font-family: "FuturaBookC";
+  font-size: 18px;
+  color: #363636;
+  position: relative;
+  bottom: 3px;
 }
 
 /*# sourceMappingURL=style.css.map */

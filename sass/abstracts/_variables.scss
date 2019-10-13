@@ -10,7 +10,12 @@ $mobile: 375px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-} 
+}
+
+@font-face {
+    font-family: 'FuturaMediumC';
+    src: url('/assets/fonts/FuturaMediumCRegular.otf');
+}
 
 @font-face {
     font-family: 'FuturaDemic';
@@ -25,4 +30,9 @@ $mobile: 375px;
 @font-face {
     font-family: 'YesevaOne';
     src: url('/assets/fonts/YesevaOne-Regular_v2.otf');
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('/assets/fonts/ProximaNova-Regular.ttf');
 }

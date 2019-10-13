@@ -1,0 +1,14 @@
+.input-border-bottom {
+    border: 1px solid rgba(54, 54, 54, 0.3);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+
+    &::placeholder {
+        font-family: 'FuturaBookC';
+        font-size: 18px;
+        color: $black-txt;
+        position: relative;
+        bottom: 3px;
+    }
+}
