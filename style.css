@@ -896,11 +896,35 @@ body {
 .steps-to-goal .left-text-block__prg-2 {
   top: 150px;
 }
+.steps-to-goal .left-text-block__switch-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 71%;
+  height: 20px;
+  position: relative;
+  top: 250px;
+}
+.steps-to-goal .left-text-block__switch-block .circles-block {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.steps-to-goal .left-text-block__switch-block .circle {
+  width: 9px;
+  height: 9px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+}
+.steps-to-goal .left-text-block__switch-block .circle_active {
+  background-color: #FFFFFF;
+}
 .steps-to-goal .right-block {
   position: relative;
   width: 53.2%;
   height: 601px;
-  top: 513px;
+  top: 517px;
   left: 11.8%;
   display: flex;
   flex-direction: column;
@@ -908,11 +932,251 @@ body {
 }
 .steps-to-goal .right-block .top-block {
   width: 100%;
-  height: 177px;
+  height: 168px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
 }
 .steps-to-goal .right-block .bottom-block {
   width: 100%;
   height: 379px;
+}
+.steps-to-goal .right-block .bottom-block img {
+  width: 100%;
+}
+.steps-to-goal .top-row-items {
+  width: 100%;
+  height: 62px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.steps-to-goal .bottom-row-items {
+  width: 100%;
+  height: 61px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.steps-to-goal .itm {
+  width: 18%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.steps-to-goal .itm .number {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.3);
+  font-family: "YesevaOne";
+}
+.steps-to-goal .itm .number_active {
+  color: #FFFFFF;
+}
+.steps-to-goal .itm .line {
+  width: 12%;
+  height: 2px;
+  background-color: #694e02;
+}
+.steps-to-goal .itm .line_active {
+  background-color: #E3B873;
+}
+.steps-to-goal .itm-3, .steps-to-goal .itm-6 {
+  width: 13%;
+}
+.steps-to-goal .itm-3 .line, .steps-to-goal .itm-6 .line {
+  width: 16%;
+}
+.steps-to-goal .itm-4 .line, .steps-to-goal .itm-5 .line {
+  margin-top: -5%;
+}
+.steps-to-goal .itm-4 .descr-text, .steps-to-goal .itm-5 .descr-text {
+  margin-bottom: 12%;
+}
+.steps-to-goal .itm .descr-text {
+  font-size: 15px;
+  line-height: 18px;
+  color: rgba(255, 255, 255, 0.3);
+  font-family: "FuturaBookC";
+}
+.steps-to-goal .itm .descr-text_active {
+  color: #FFFFFF;
+}
+
+.team-block {
+  max-width: 1440px;
+  width: 100%;
+  height: 825px;
+  top: 7137px;
+  position: absolute;
+  text-align: center;
+}
+.team-block__heading {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-family: "YesevaOne";
+}
+.team-block__img-block {
+  position: relative;
+  top: 17px;
+}
+.team-block__prg-1 {
+  position: relative;
+  top: 33px;
+  font-size: 20px;
+  line-height: 27px;
+  color: #FFFFFF;
+  font-family: "FuturaBookC";
+}
+.team-block .teammates {
+  position: relative;
+  width: 71.4%;
+  top: 114px;
+  height: 415px;
+  margin-bottom: 34px;
+  left: 14.4%;
+  display: flex;
+  justify-content: space-between;
+}
+.team-block .teammates__itm {
+  height: 393px;
+  width: 26.5%;
+}
+.team-block .teammates__img {
+  width: 100%;
+}
+.team-block .teammates__logo {
+  position: relative;
+  width: 26.5%;
+  height: 17%;
+  margin-top: -144%;
+  margin-left: -13%;
+  background-color: #E3B873;
+  box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.5);
+}
+.team-block .teammates__logo img {
+  margin-top: 16%;
+}
+.team-block .teammates__descr {
+  position: relative;
+  background-color: #FFFFFF;
+  margin-top: 90%;
+  width: 85.4%;
+  height: 135px;
+  left: 7%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.team-block .teammates__heading-3 {
+  position: relative;
+  top: 22px;
+  font-size: 18px;
+  font-family: "YesevaOne";
+  color: #131313;
+}
+.team-block .teammates__heading-4 {
+  position: relative;
+  top: 32px;
+  color: #959595;
+  font-size: 18px;
+  font-family: "FuturaBookC";
+}
+.team-block .teammates__btn {
+  border-radius: 0%;
+  position: relative;
+  top: 57px;
+  width: 100%;
+  height: 43px;
+}
+.team-block .teammates__btn-txt {
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-family: "YesevaOne";
+}
+.team-block__line {
+  position: relative;
+  margin: 0 auto;
+  top: 133px;
+  width: 54px;
+  height: 2px;
+  background-color: #E3B873;
+}
+.team-block__bottom-prg {
+  position: relative;
+  font-size: 20px;
+  line-height: 34px;
+  color: #363636;
+  font-family: "FuturaBookC";
+}
+.team-block__prg-2 {
+  top: 142px;
+}
+.team-block__prg-3 {
+  top: 143px;
+}
+
+.clients-block {
+  max-width: 1440px;
+  width: 100%;
+  height: 640px;
+  position: absolute;
+  top: 8070px;
+  text-align: center;
+}
+.clients-block__heading {
+  font-size: 20px;
+  font-family: "YesevaOne";
+  color: #181818;
+  text-transform: uppercase;
+}
+.clients-block__img-block {
+  margin-top: 15px;
+}
+.clients-block__prg {
+  font-size: 20px;
+  line-height: 27px;
+  font-family: "FuturaBookC";
+  color: #363636;
+  margin-top: 17px;
+}
+.clients-block__examples {
+  width: 86%;
+  height: 432px;
+  position: relative;
+  top: 71px;
+  left: 7.2%;
+  display: flex;
+  justify-content: space-between;
+}
+.clients-block .itm {
+  width: 30.3%;
+  height: 90%;
+  box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
+}
+.clients-block .itm__heading {
+  font-size: 18px;
+  line-height: 23px;
+  font-family: "YesevaOne";
+  color: #181818;
+}
+.clients-block .itm__top-block {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 68.3%;
+  left: 5%;
+  align-items: center;
+}
+.clients-block .itm__bottom-prg {
+  font-size: 15px;
+  color: #959595;
+  font-family: "FuturaBookC";
+  margin-top: 4%;
+  line-height: 186.9%;
 }
 
 @media screen and (max-width: 375px) {
