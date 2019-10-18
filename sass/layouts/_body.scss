@@ -1,7 +1,13 @@
 body {
-    max-width: 1438px;
-    max-height: 10150px;
+    max-width: 1440px;
+    height: 10151px;
     width: 100%;
-    height: auto;
     margin: 0 auto;
+}
+
+@media screen and (max-width: $mobile) {
+    body {
+        max-width: $mobile;
+        min-height: 8271px;
+    }
 }

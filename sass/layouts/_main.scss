@@ -1,13 +1,15 @@
 .main {
     width: 100%;
-    min-height: 9943px;
-    height: 100%;
+    height: 9935px;
+    background-image: url('/assets/img/desktop/left-frame.png'),
+                      url('/assets/img/desktop/right-frame.png');
+    background-repeat: no-repeat;
+    background-position: 0% 89.5%, 100% 89.5%;
 
     .main-block {
         width: 100%;
-        height: 100%;
         max-width: 1438px;
-        min-height: 707px;
+        height: 707px;
         display: flex;
     }
 
@@ -23,17 +25,6 @@
             position: relative;
             top: 233px;
             left: 42.27%;
-
-            &span:after {
-                content: "";
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                height: 0.5em;
-                border-top: 1px solid black;
-                z-index: -1;
-            }
         }
     }
 
@@ -64,12 +55,16 @@
 
         &__p {
             position: relative;
-            left: 9.67%;
+            left: 8.8%;
             font-size: 22px;
             line-height: 30px;
             color: $white-color;
             top: 207px;
             font-family: 'FuturaBookC';
+            
+            &-mob {
+                display: none;
+            }
         }
 
         .btn-block {
@@ -85,12 +80,16 @@
                 height: 100%;
             }
 
-            &__calc-span, &__submit-text {
+            &__calc-span, &__submit-text, &__submit-text-mob {
                 font-family: 'FuturaDemic';
                 font-size: 13px;
                 color: $white-color;
             }
             
+            &__submit-text-mob {
+                display: none;
+            }
+
             &__submit-btn {
                 width: 48%;
                 height: 100%;
@@ -121,7 +120,7 @@
 
     .projects {
         width: 100%;
-        min-height: 1074px;
+        height: 1074px;
         background-color: $background-color;
 
         &__headers-block {
@@ -168,6 +167,10 @@
             top: 172px;
             left: 7.02%;
             width: 29%;
+        
+            &-mob {
+                display: none;
+            }
         }
 
         &__prop {
@@ -238,13 +241,17 @@
                 right: 3.15%;
                 top: 39.55%;
             }
+
+            &-mob {
+                display: none;
+            }
         }    
 
     }
 
     .descr-block {
         width: 100%;
-        min-height: 7200px;
+        height: 6846px;
         background-color: $white-color;
     }
 }
@@ -282,6 +289,10 @@
         color: $black-txt;
         position: relative;
         top: 134px;
+
+        &-mob {
+            display: none;
+        }
     }
 }
 
@@ -470,7 +481,7 @@
         width: 35%;
         height: 509px;
         top: 52px;
-        left: 59.8%;
+        left: 58%;
         text-align: center;
         background-color: $background-color;
         border: 1px solid rgba(255, 255, 255, 0.015);
@@ -556,7 +567,7 @@
         height: 110px;
         display: flex;
         top: 79px;
-        left: 56.6%;
+        left: 58.8%;
 
         &__span {
             font-size: 20px;
@@ -599,14 +610,14 @@
         position: relative;
         width: 20%;
         top: 15.8%;
-        left: 8.9%;
+        left: 7%;
     }
 
     &__ul {
         position: relative;
         width: 20%;
-        top: 20%;
-        left: 8.9%;
+        top: 18%;
+        left: 7%;
 
         &__itm {
             margin-top: 5.5%;
@@ -629,15 +640,16 @@
         justify-content: space-between;
 
         &-col-1 {
-            height: 438px;
+            height: 946px;
             width: 24.4%;
-            top: -658px;
-            left: 42.9%;
+            top: -657px;
+            left: 41%;
         }
 
         &-col-2 {
-            top: -1168px;
-            left: 70.5%;
+            margin-top: -1676px;
+            height: 939px;
+            left: 68.4%;
             width: 24.4%;
             height: 640px;
         }
@@ -659,13 +671,13 @@
         font-size: 20px;
         font-family: 'YesevaOne';
         width: 15%;
-        margin-left: 44.5%;
+        left: 42.6%;
+        position: relative;
     }
 
     &__img {
         top: 17px;
         position: relative;
-        margin-left: 4%;
     }
 
     &__p {
@@ -673,7 +685,6 @@
         line-height: 27px;
         font-family: 'FuturaBookC';
         color: $black-txt;
-        margin-left: 4%;
         position: relative;
         top: 34px;
     }
@@ -682,7 +693,7 @@
         position: relative;
         top: 81px;
         width: 85.9%;
-        left: 7.8%;
+        left: 7.2%;
         @include flex;
     }
 
@@ -764,12 +775,21 @@
                 position: relative;
                 top: 65px;
                 left: -15.4%;
+                margin-left: -1%;
 
                 .cost-btn-txt {
                     font-family: 'YesevaOne';
                     color: $white-color;
                     font-size: 18px;
                     text-transform: uppercase;
+                }
+                
+                &-1 {
+                    top: -11px;
+                }
+
+                &-2 {
+                    top: 193px;
                 }
             }
         }    
@@ -1142,7 +1162,7 @@
 
     .itm {
         width: 30.3%;
-        height: 90%;
+        height: 93.6%;
         box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
         
         &__heading {
@@ -1150,6 +1170,7 @@
             line-height: 23px;
             font-family: 'YesevaOne';
             color: #181818;
+            text-align: right;
         }
 
         &__top-block {
@@ -1167,15 +1188,407 @@
             font-family: 'FuturaBookC';
             margin-top: 4%;
             line-height: 186.9%;
+            text-align: left;
+            padding-left: 5.6%;
+        }
+
+        &__btn-block {
+            position: relative;
+            top: 66px;
+            width: 78.5%;
+            height: 55px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__btn {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5);
+        }
+
+        &__btn-size {
+            width: 45.5%;
+        }
+
+        &__btn-days {
+            width: 54%;
+        }
+
+        &__span {
+            font-size: 17px;
+            color: $white-color;
+            font-family: 'YesevaOne';
+        
+            &-days {
+                padding-right: 6%;
+            }
         }
     }
 }
 
-@media screen {
+.bottom-form {
+    width: 59%;
+    height: 446px;
+    position: absolute;
+    top: 8842px;
+    left: 21.3%;
+    background-color: $background-color;
+    z-index: 15;
+}
+
+.address-block {
+    max-width: 1440px;
+    width: 100%;
+    height: 954px;
+    position: absolute;
+    top: 9064px;
+    text-align: center;
+    background-image: url('/assets/img/desktop/background-building.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    z-index: 13;
+
+    .gradient {
+        background: linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%);
+        max-width: 1440px;
+        width: 100%;
+        height: 954px;
+        position: absolute;
+        top: 0px;
+        z-index: 10;
+    }
+
+    &__span {
+        font-size: 20px;
+        line-height: 28px;
+        text-transform: uppercase;
+        font-family: 'YesevaOne';
+        color: $elements-color;
+        position: relative;
+        top: 272px;
+        z-index: 13;
+    }
+
+    &__circle-btn {
+        width: 39%;
+        height: 100%;
+        background-color: $elements-color;
+        border-radius: 50%;
+        z-index: 13;
+    }
+
+    &__img-block {
+        width: 4.9%;
+        height: 28px;
+        top: 295px;
+        left: 47.4%;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__img {
+        padding-top: 26%;
+    }
+
+    &__map-block {
+        position: relative;
+        top: 338px;
+        left: 17.7%;
+        width: 64.3%;
+        z-index: 13;
+    }
+
+    &__map-img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: $mobile) {
     .main {
-        @media (max-width: $mobile) {
-            max-width: 375px;
-            min-height: 8271px;
+        max-width: $mobile;
+        height: 8271px;
+
+        .main-block {
+            height: 478px;
+        }
+
+        .calc-cost {
+            height: 478px;
+            background-image: url('/assets/img/mobile/main-block-background.png');
+        }
+
+        .main-content {
+            width: 100%;
+
+            .main-content__p-mob {
+                top: 96px;
+                left: 5%;
+                font-size: 18px;
+                line-height: 24px;
+                position: relative;
+                color: $white-color;
+                font-family: 'FuturaBookC';
+                display: block;
+            }
+
+            .btn-block {
+                width: 90.4%;
+                height: 129px;
+                left: 4.7%;
+                top: 130px;
+                flex-direction: column;
+
+                &__submit-btn, &__cost-btn {
+                    width: 100%;
+                    height: 51px;
+                    
+                    .btn-block__submit-text {
+                        display: none;
+                    }
+
+                    .btn-block__submit-text-mob {
+                        display: block
+                    }
+                }
+            }
+        }
+
+        .main-content__header {
+            font-size: 23px;
+            line-height: 31px;
+            top: 84px;
+            width: 79%;
+            margin-left: -4%;
+        }
+
+        .main-content__p {
+            display: none;
+        }
+
+        .scroll-down {
+            display: none;
+        }
+
+        .side-bar {
+            display: none;
+        }
+
+        .projects {
+            height: 728px;
+
+            &__headers-block {
+                display: none;
+            }
+
+            &__heading {
+                top: 31px;
+                left: 33%;
+                width: 33%;
+                font-size: 22px;
+                line-height: 31.5px;
+                text-align: center;
+                letter-spacing: -0.07em;
+            }
+
+            &__p {
+                display: none;
+                
+                &-mob {
+                    display: block;
+                    font-size: 14px;
+                    line-height: 169.8%;
+                    color: $white-color;
+                    font-family: 'FuturaBookC';
+                    width: 98%;
+                    top: 53px;
+                    left: 0.7%;
+                    position: relative;
+                    text-align: center;
+                }
+            }
+
+            &__slider {
+                display: none;
+            
+                &-mob {
+                    display: block;
+                    position: relative;
+                    width: 90.7%;
+                    height: 241px;
+                    top: -97px;
+                    left: 4.7%;
+
+                    .slider-img-next {
+                        position: absolute;
+                        top: 103px;
+                        left: 85.5%;
+                    }
+    
+                    .slider-img-prev {
+                        position: absolute;
+                        transform: rotate(180deg);
+                        top: 103px;
+                        left: 4.5%;
+                    }
+                }
+
+                .slider-img-1 {
+                    position: relative;
+                    width: 100%;
+                }
+            }
+
+            &__prop {
+                top: 364px;
+                width: 78%;
+                left: 4.9%;
+                justify-content: space-between;
+            }
+            
+            .prop__itm-2 {
+                margin-top: 6%;
+            }
+
+            .prop__itm-4 {
+                margin-top: 3%;
+            }
+
+            .prop__itm__heading {
+                font-size: 14px;
+            }
+
+            .prop__itm__p {
+                font-size: 14px;
+                line-height: 19px;
+            }
+        }
+
+        .descr-block {
+            background-color: $background-color;
+        }
+
+        .online-control {
+            width: 100%;
+            height: 532px;
+            left: 0px;
+            top: -1px;
+            position: relative;
+            background-color: $background-color;
+
+            &__heading {
+                font-size: 22px;
+                word-spacing: 3px;
+            }
+
+            &__img-block {
+                top: 20px;
+            }
+
+            &__video {
+                width: 90.1%;
+                height: 210px;
+                top: 56px;
+                left: 0.21%;
+            }
+
+            .line {
+                width: 53px;
+                height: 2px;
+                margin: 0 auto;
+                top: 81px;
+                position: relative;
+                background-color: $elements-color;
+            }
+
+            &__prg {
+                display: none;
+
+                &-mob {
+                    font-size: 14px;
+                    line-height: 24px;
+                    color: $white-color;
+                    font-family: 'FuturaBookC';
+                    position: relative;
+                    top: 97px;
+                    display: block;
+                }
+            }
+        }
+        
+        .types-of-repair {
+            width: 100%;
+            height: 1678px;
+            position: relative;
+            top: 376px;
+            left: 0;
+            background-color: $white-color;
+
+            &__heading {
+                font-size: 22px;
+            }
+
+            &__img-block {
+                top: 16px;
+                position: relative;
+            }
+
+            .examples {
+                flex-direction: column;
+                top: 52px;
+                height: 1451px;
+                
+                &__itm {
+                    width: 91%;
+                    height: 366px;
+                
+                    &__about {
+                        top: 223px;
+                        left: 0;
+                        width: 79.6%;
+                        height: 241px;                    
+                    }
+
+                    &__about__btn {
+                        top: 25px;
+                        left: -14.9%;
+                        width: 70%;
+                        height: 40px;                    
+                    }
+                }
+            }
+        }
+
+        .free-services {
+            display: none;
+        }
+
+        .styles {
+            &__gradient {
+                display: none;
+            }
+
+            &__ul {
+                display: none;
+            }
+
+            &__img-col-1 {
+                display: none;
+            }
+
+            &__img-col-2 {
+                display: none;
+            }
+        }
+
+        .steps-to-goal {
+            display: none;
+        }
+
+        .clients-block {
+            display: none;
         }
     }
 }
