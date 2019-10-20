@@ -3,11 +3,15 @@ body {
     height: 10151px;
     width: 100%;
     margin: 0 auto;
+
+    button:hover, input:hover {
+        cursor: pointer;
+    }
 }
 
 @media screen and (max-width: $mobile) {
     body {
         max-width: $mobile;
-        min-height: 8271px;
+        height: 8797px;
     }
 }

@@ -78,11 +78,14 @@ body {
   width: 100%;
   margin: 0 auto;
 }
+body button:hover, body input:hover {
+  cursor: pointer;
+}
 
 @media screen and (max-width: 375px) {
   body {
     max-width: 375px;
-    min-height: 8271px;
+    height: 8797px;
   }
 }
 .header {
@@ -196,6 +199,10 @@ body {
   height: 707px;
   display: flex;
 }
+.main .switch-block:hover, .main .slider-img-next:hover,
+.main .slider-img-prev:hover {
+  cursor: pointer;
+}
 .main .side-bar {
   width: 6.25%;
   background-color: #131313;
@@ -209,6 +216,14 @@ body {
   top: 233px;
   left: 42.27%;
 }
+.main .side-bar .line {
+  position: absolute;
+  background-color: #E3B873;
+  width: 2px;
+  top: 408px;
+  left: 5.4%;
+  height: 52px;
+}
 .main .calc-cost {
   width: 100%;
   height: 707px;
@@ -220,7 +235,7 @@ body {
   width: 50%;
 }
 .main .main-content__header {
-  font-size: 40px;
+  font-size: 2.645vw;
   font-family: "YesevaOne";
   color: #FFFFFF;
   position: relative;
@@ -289,6 +304,9 @@ body {
   font-family: "YesevaOne";
   font-size: 14px;
   margin-right: -81px;
+}
+.main .scroll-down:hover {
+  cursor: pointer;
 }
 .main .projects {
   width: 100%;
@@ -363,6 +381,9 @@ body {
   display: flex;
   flex-direction: column;
 }
+.main .projects .prop__flex-col-2 {
+  margin-left: 19%;
+}
 .main .projects .prop__itm {
   height: 92px;
 }
@@ -401,6 +422,31 @@ body {
 .main .projects__slider-mob {
   display: none;
 }
+.main .projects .switch-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  width: 13.5%;
+  top: 1434px;
+  left: 9.5%;
+  height: 20px;
+}
+.main .projects .switch-block .circles-block {
+  width: 31%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .projects .switch-block .circle {
+  width: 9px;
+  height: 9px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+}
+.main .projects .switch-block .circle_active {
+  background-color: #FFFFFF;
+}
 .main .descr-block {
   width: 100%;
   height: 6846px;
@@ -431,7 +477,7 @@ body {
   top: 45px;
 }
 .online-control__prg {
-  font-size: 20px;
+  font-size: 1.341vw;
   line-height: 34px;
   font-family: "FuturaBookC";
   color: #363636;
@@ -597,17 +643,70 @@ body {
 
 .free-services {
   max-width: 1440px;
+  display: flex;
   position: absolute;
   top: 3527px;
   width: 100%;
   height: 681px;
+  background-image: url("/assets/img/desktop/backgr-building.png");
+  background-repeat: no-repeat;
+  background-position: 0% -149%;
+}
+.free-services .circles-block {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30%;
+  height: 473px;
+  top: 62px;
+  left: 25%;
+}
+.free-services .circles-block .itm {
+  display: flex;
+  width: 100%;
+  height: 40px;
+  align-items: center;
+}
+.free-services .circles-block .itm-2 {
+  margin-top: -11.8%;
+}
+.free-services .circles-block .itm-2 .circle-img {
+  margin-left: 17%;
+}
+.free-services .circles-block .itm-3 .circle-img {
+  margin-left: 23%;
+}
+.free-services .circles-block .itm-4 .circle-img {
+  margin-left: 8%;
+}
+.free-services .circles-block .itm__span {
+  font-size: 18px;
+  line-height: 21px;
+  font-family: "FuturaMediumC";
+}
+.free-services .circles-block .circle-img {
+  width: 40px;
+  height: 40px;
+  margin-right: 18px;
+  border-radius: 50%;
+  background-color: #E3B873;
+  box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+}
+.free-services .circles-block .circle-img .img__txt {
+  position: relative;
+  top: 10px;
+  left: 10px;
+  font-size: 18px;
+  font-family: "YesevaOne";
+  color: #FFFFFF;
 }
 .free-services__form {
   position: relative;
   width: 35%;
   height: 509px;
   top: 52px;
-  left: 58%;
+  left: 28%;
   text-align: center;
   background-color: #131313;
   border: 1px solid rgba(255, 255, 255, 0.015);
@@ -681,11 +780,11 @@ body {
   text-transform: uppercase;
 }
 .free-services .save-cost {
-  position: relative;
+  position: absolute;
   width: 30%;
   height: 110px;
   display: flex;
-  top: 79px;
+  top: 590px;
   left: 58.8%;
 }
 .free-services .save-cost__span {
@@ -786,7 +885,7 @@ body {
   left: 42.6%;
   position: relative;
 }
-.design-project__heading-mob {
+.design-project .examples__itm__about__heading-mob {
   display: none;
 }
 .design-project__img {
@@ -1114,6 +1213,9 @@ body {
 .team-block .teammates__img {
   width: 100%;
 }
+.team-block .teammates__img-mob {
+  display: none;
+}
 .team-block .teammates__logo {
   position: relative;
   width: 26.5%;
@@ -1278,13 +1380,102 @@ body {
 }
 
 .bottom-form {
-  width: 59%;
+  width: 58.8%;
   height: 446px;
   position: absolute;
   top: 8842px;
-  left: 21.3%;
+  left: 21.2%;
   background-color: #131313;
   z-index: 15;
+  text-align: center;
+}
+.bottom-form .span {
+  font-size: 20px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-family: "YesevaOne";
+  position: relative;
+  top: 31px;
+}
+.bottom-form .fields-block {
+  position: relative;
+  width: 59%;
+  height: 140px;
+  top: 78px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.bottom-form .fields-block .submit-form__text {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 15px;
+  font-family: "FuturaBookC";
+}
+.bottom-form .fields-block .submit-form__input {
+  background-color: #131313;
+  margin-top: 3%;
+  height: 24px;
+  padding-bottom: 5px;
+}
+.bottom-form .fields-block .submit-form__input::placeholder {
+  font-size: 18px;
+  color: #FFFFFF;
+}
+.bottom-form .top-block {
+  height: 45px;
+  display: flex;
+  justify-content: space-between;
+}
+.bottom-form .top-block .name-input, .bottom-form .top-block .phone-input {
+  width: 45%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.bottom-form .top-block .phone-input {
+  width: 43.8%;
+}
+.bottom-form .bottom-block {
+  width: 100%;
+  height: 45px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.bottom-form .bottom-block .submit-form__input {
+  margin-top: 1%;
+}
+.bottom-form .submit-form__input {
+  width: 100%;
+}
+.bottom-form .container {
+  left: 34%;
+  top: 123px;
+}
+.bottom-form .bottom-block__span {
+  color: #FFFFFF;
+  font-size: 16px;
+  font-family: "FuturaBookC";
+  position: relative;
+  top: 123px;
+  left: 1.72%;
+}
+.bottom-form .submit-btn {
+  position: absolute;
+  border-radius: 0;
+  top: 360px;
+  left: 39%;
+  width: 22.7%;
+  height: 50px;
+}
+.bottom-form .submit-btn .btn-txt {
+  font-size: 15px;
+  font-family: "FuturaDemic";
+  color: #FFFFFF;
 }
 
 .address-block {
@@ -1317,6 +1508,9 @@ body {
   position: relative;
   top: 272px;
   z-index: 13;
+}
+.address-block__span-mob {
+  display: none;
 }
 .address-block__circle-btn {
   width: 39%;
@@ -1351,7 +1545,7 @@ body {
 @media screen and (max-width: 375px) {
   .main {
     max-width: 375px;
-    height: 8271px;
+    height: 8740px;
   }
   .main .main-block {
     height: 478px;
@@ -1556,6 +1750,9 @@ body {
     top: 61px;
     position: relative;
   }
+  .main .submit-form .phone-wrapper .submit-form__text-mob {
+    display: block;
+  }
   .main .submit-form__input-phone {
     width: 99.1%;
     margin-top: 0.5%;
@@ -1566,9 +1763,6 @@ body {
   }
   .main .submit-form__text-desc {
     display: none;
-  }
-  .main .submit-form__text-mob {
-    display: block;
   }
   .main .submit-form__btn {
     top: 167px;
@@ -1785,6 +1979,7 @@ body {
     display: none;
   }
   .main .design-project .examples__itm__about__heading-mob {
+    display: block;
     color: #181818;
     font-size: 15px;
     font-family: "YesevaOne";
@@ -1824,17 +2019,180 @@ body {
   .main .team-block__heading {
     font-size: 22px;
   }
+  .main .team-block__prg-1 {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .main .team-block__line {
+    display: none;
+  }
+  .main .team-block__bottom-prg {
+    display: none;
+  }
   .main .team-block .teammates {
     width: 81%;
-    height: 1380px;
+    height: 1420px;
     left: 14%;
     flex-direction: column;
+  }
+  .main .team-block .teammates__img {
+    display: none;
+  }
+  .main .team-block .teammates__img-mob {
+    width: 100%;
+    display: block;
   }
   .main .team-block .teammates__itm {
     width: 100%;
   }
+  .main .team-block .teammates__itm-2 {
+    margin-top: 8%;
+  }
+  .main .team-block .teammates__logo {
+    width: 23%;
+    height: 18%;
+    top: 11.2%;
+    left: 1.7%;
+  }
+  .main .team-block .teammates__descr {
+    width: 76.7%;
+    top: 3%;
+    left: 10.4%;
+    z-index: 30;
+  }
+  .main .team-block .teammates__btn {
+    height: 45px;
+    z-index: 30;
+  }
   .main .clients-block {
     display: none;
+  }
+  .main .bottom-form {
+    position: relative;
+    left: 0;
+    top: 79px;
+    width: 100%;
+    height: 630px;
+  }
+  .main .bottom-form .span {
+    font-size: 20px;
+    top: 130px;
+  }
+  .main .bottom-form .fields-block {
+    top: 183px;
+    width: 91%;
+    height: 261px;
+  }
+  .main .bottom-form .top-block {
+    flex-direction: column;
+  }
+  .main .bottom-form .name-input, .main .bottom-form .phone-input {
+    width: 100%;
+  }
+  .main .bottom-form .name-input .submit-form__input {
+    margin-top: 2%;
+  }
+  .main .bottom-form .phone-input {
+    margin-top: 14%;
+  }
+  .main .bottom-form .submit-btn {
+    top: 579px;
+    height: 51px;
+    width: 90.5%;
+    left: 5%;
+  }
+  .main .bottom-form .container {
+    top: 204px;
+    left: 5%;
+  }
+  .main .bottom-form .bottom-block__span {
+    color: #FFFFFF;
+    top: 204px;
+    left: -4%;
+  }
+  .main .address-block {
+    position: relative;
+    height: 514px;
+    top: 79px;
+    background-color: #131313;
+    background-image: none;
+  }
+  .main .address-block .gradient {
+    display: none;
+  }
+  .main .address-block__map-block {
+    width: 90.7%;
+    height: 254px;
+    left: 4.8%;
+    top: -66px;
+  }
+  .main .address-block .address-block__map-img {
+    height: 100%;
+  }
+  .main .address-block__span {
+    display: none;
+  }
+  .main .address-block__span-mob {
+    font-size: 18px;
+    line-height: 25px;
+    top: 341px;
+    display: block;
+    position: relative;
+    color: #E3B873;
+    font-family: "YesevaOne";
+    text-transform: uppercase;
+  }
+  .main .address-block__img-block {
+    top: 362px;
+    left: 37%;
+    width: 26.7%;
+    height: 7.4%;
+  }
+}
+@media screen and (max-width: 1402px) {
+  .slider-img-2 {
+    display: none;
+  }
+}
+@media screen and (max-width: 1350px) {
+  .prop__itm__heading {
+    font-size: 14px !important;
+    line-height: 15px !important;
+  }
+
+  .prop__itm__p {
+    font-size: 10px !important;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .circles-block {
+    display: none !important;
+  }
+
+  .itm__bottom-prg {
+    font-size: 10px !important;
+  }
+
+  .save-cost {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 800px) {
+  .left-text-block__prg {
+    font-size: 10px !important;
+  }
+}
+@media screen and (max-width: 850px) {
+  .itm {
+    line-height: 17px !important;
+  }
+
+  .itm__span, .descr-text, .projects__p {
+    font-size: 10px !important;
+  }
+
+  .cost-btn-txt {
+    font-size: 13px !important;
   }
 }
 .footer {
