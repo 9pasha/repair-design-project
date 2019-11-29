@@ -126,6 +126,9 @@ body button:hover, body input:hover {
   font-family: "FuturaBookC";
   font-size: 0.972vw;
 }
+.header .nav__item:hover {
+  color: #E3B873;
+}
 .header .nav__item-6 {
   margin-right: 4px;
 }
@@ -147,6 +150,9 @@ body button:hover, body input:hover {
   width: 38%;
   height: 100%;
   margin-right: 23%;
+}
+.header .call-btn:hover {
+  background-color: #ffd106;
 }
 .header .call-btn .call-btn__text {
   font-size: 13px;
@@ -199,7 +205,7 @@ body button:hover, body input:hover {
   height: 707px;
   display: flex;
 }
-.main .switch-block:hover, .main .slider-img-next:hover,
+.main .switch-block:hover,
 .main .slider-img-prev:hover {
   cursor: pointer;
   color: gray;
@@ -273,6 +279,9 @@ body button:hover, body input:hover {
   width: 47.5%;
   height: 100%;
 }
+.main .main-content .btn-block__cost-btn:hover {
+  background-color: #ffd106;
+}
 .main .main-content .btn-block__calc-span, .main .main-content .btn-block__submit-text, .main .main-content .btn-block__submit-text-mob {
   font-family: "FuturaDemic";
   font-size: 13px;
@@ -287,6 +296,9 @@ body button:hover, body input:hover {
   border-radius: 2px;
   border: 1px solid #FFFFFF;
   background-color: Transparent;
+}
+.main .main-content .btn-block__submit-btn:hover {
+  background-color: #ffd106;
 }
 .main .scroll-down {
   width: 16.6%;
@@ -305,6 +317,9 @@ body button:hover, body input:hover {
   font-family: "YesevaOne";
   font-size: 14px;
   margin-right: -81px;
+}
+.main .scroll-down__span:hover {
+  color: #E3B873;
 }
 .main .scroll-down:hover {
   cursor: pointer;
@@ -330,6 +345,9 @@ body button:hover, body input:hover {
   text-transform: uppercase;
   font-family: "YesevaOne";
   color: rgba(255, 255, 255, 0.3);
+}
+.main .projects__headers-block .projects__link:hover {
+  color: #ffd106;
 }
 .main .projects__headers-block .projects__link_active {
   color: #E3B873;
@@ -419,6 +437,13 @@ body button:hover, body input:hover {
   position: absolute;
   right: 3.15%;
   top: 39.55%;
+  transition-duration: 2s;
+  transition-property: width, height;
+}
+.main .projects__slider .slider-img-next:hover {
+  width: 90px;
+  height: 90px;
+  cursor: pointer;
 }
 .main .projects__slider-mob {
   display: none;
@@ -439,11 +464,19 @@ body button:hover, body input:hover {
   justify-content: space-between;
   align-items: center;
 }
+.main .projects .switch-block .right-arrow img:hover, .main .projects .switch-block .left-arrow img:hover {
+  cursor: pointer;
+  border: 1px solid #ffd106;
+}
 .main .projects .switch-block .circle {
   width: 9px;
   height: 9px;
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 50%;
+}
+.main .projects .switch-block .circle:hover {
+  background-color: #ffd106;
+  cursor: pointer;
 }
 .main .projects .switch-block .circle_active {
   background-color: #FFFFFF;
@@ -533,6 +566,9 @@ body button:hover, body input:hover {
 }
 .submit-form__btn {
   width: 25.9%;
+}
+.submit-form__btn:hover {
+  background-color: #ffd106;
 }
 .submit-form .bottom-block {
   width: 100%;
@@ -841,6 +877,9 @@ body button:hover, body input:hover {
   line-height: 34px;
   font-family: "Proxima Nova";
 }
+.styles__ul__itm:hover {
+  background-color: #ffd106;
+}
 .styles__ul__itm_active {
   color: #E3B873;
   text-decoration: underline;
@@ -1078,6 +1117,10 @@ body button:hover, body input:hover {
   justify-content: space-between;
   align-items: center;
 }
+.steps-to-goal .left-text-block__switch-block .right-arrow img:hover, .steps-to-goal .left-text-block__switch-block .left-arrow img:hover {
+  cursor: pointer;
+  border: 1px solid #ffd106;
+}
 .steps-to-goal .left-text-block__switch-block .circle {
   width: 9px;
   height: 9px;
@@ -1086,6 +1129,10 @@ body button:hover, body input:hover {
 }
 .steps-to-goal .left-text-block__switch-block .circle_active {
   background-color: #FFFFFF;
+}
+.steps-to-goal .left-text-block__switch-block .circle:hover {
+  background-color: #ffd106;
+  cursor: pointer;
 }
 .steps-to-goal .right-block {
   position: relative;
@@ -1519,6 +1566,9 @@ body button:hover, body input:hover {
   background-color: #E3B873;
   border-radius: 50%;
   z-index: 13;
+}
+.address-block__circle-btn:hover {
+  background-color: #ffd106;
 }
 .address-block__img-block {
   width: 4.9%;
@@ -2149,6 +2199,9 @@ body button:hover, body input:hover {
     width: 26.7%;
     height: 7.4%;
   }
+  .main .address-block__circle-btn:hover {
+    background-color: #E3B873;
+  }
 }
 @media screen and (max-width: 1402px) {
   .slider-img-2 {
@@ -2243,6 +2296,9 @@ body button:hover, body input:hover {
   border-radius: 2px;
   border: none;
   background-color: #E3B873;
+}
+.orange-btn:hover {
+  background-color: #ffd106;
 }
 
 .container {

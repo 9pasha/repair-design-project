@@ -18,4 +18,8 @@
     border-radius: 2px;
     border: none; 
     background-color: $elements-color;
+
+    &:hover {
+        background-color: $yellow;
+    }
 }

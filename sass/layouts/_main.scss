@@ -13,7 +13,7 @@
         display: flex;
     }
 
-    .switch-block:hover, .slider-img-next:hover,
+    .switch-block:hover,
     .slider-img-prev:hover {
         cursor: pointer;
         color: gray;
@@ -93,6 +93,10 @@
             &__cost-btn {
                 width: 47.5%;
                 height: 100%;
+
+                &:hover {
+                    background-color: $yellow;
+                }
             }
 
             &__calc-span, &__submit-text, &__submit-text-mob {
@@ -111,6 +115,10 @@
                 border-radius: 2px;
                 border: 1px solid #FFFFFF;
                 background-color: Transparent;
+
+                &:hover {
+                    background-color: $yellow;
+                }
             }
         }
     }
@@ -130,6 +138,10 @@
             font-family: 'YesevaOne';
             font-size: 14px;
             margin-right: -81px;
+
+            &:hover {
+                color: $elements-color;
+            }
         }
 
         &:hover {
@@ -157,6 +169,9 @@
                 font-family: 'YesevaOne';
                 color: rgba(255, 255, 255, 0.3);
 
+                &:hover {
+                    color: $yellow;
+                }
 
                 &_active {
                     color: $elements-color;
@@ -263,6 +278,14 @@
                 position: absolute;
                 right: 3.15%;
                 top: 39.55%;
+                transition-duration: 2s;
+                transition-property: width, height;
+
+                &:hover {
+                    width: 90px;
+                    height: 90px;
+                    cursor: pointer;
+                }
             }
 
             &-mob {
@@ -287,12 +310,22 @@
                 align-items: center;
             }
 
+            .right-arrow img:hover, .left-arrow img:hover {
+                cursor: pointer;
+                border: 1px solid $yellow;
+            }
+
             .circle {
                 width: 9px;
                 height: 9px;
                 background-color: rgba(255, 255, 255, 0.3);
                 border-radius: 50%;
             
+                &:hover {
+                    background-color: $yellow;
+                    cursor: pointer;
+                }
+
                 &_active {
                     background-color: $white-color;
                 }
@@ -400,6 +433,10 @@
 
     &__btn {
         width: 25.9%;
+
+        &:hover {
+            background-color: $yellow;
+        }
     }
 
     .bottom-block {
@@ -748,6 +785,10 @@
             line-height: 34px;
             font-family: 'Proxima Nova';
 
+            &:hover {
+                background-color: $yellow;
+            }
+
             &_active {
                 color: $elements-color;
                 text-decoration: underline;
@@ -1019,6 +1060,11 @@
                 align-items: center;
             }
 
+            .right-arrow img:hover, .left-arrow img:hover {
+                cursor: pointer;
+                border: 1px solid $yellow;
+            }
+            
             .circle {
                 width: 9px;
                 height: 9px;
@@ -1027,6 +1073,11 @@
             
                 &_active {
                     background-color: $white-color;
+                }
+
+                &:hover {
+                    background-color: $yellow;
+                    cursor: pointer;
                 }
             }
         }
@@ -1528,6 +1579,10 @@
         background-color: $elements-color;
         border-radius: 50%;
         z-index: 13;
+
+        &:hover {
+            background-color: $yellow;
+        }
     }
 
     &__img-block {
@@ -2290,6 +2345,10 @@
                 left: 37%;
                 width: 26.7%;
                 height: 7.4%;
+            }
+
+            &__circle-btn:hover {
+                background-color: $elements-color;
             }
         }
     }
