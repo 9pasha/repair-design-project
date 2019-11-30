@@ -111,9 +111,7 @@
                 <div class="online-control__img-block">
                     <img src="./assets/img/desktop/cam.png" alt="cam" class="online-control__img">
                 </div>
-                <video class="online-control__video" controls>
-                    <source src="https://www.youtube.com/watch?v=YqQx75OPRa0&t=3s">
-                </video>
+                <iframe class="online-control__video" src="https://www.youtube.com/embed/YqQx75OPRa0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <div class="line"></div>
                 <p class="online-control__prg">At each facility, a camera is installed that broadcasts the progress of work on the clock.<br>
                     At any time, you can go to our website and monitor the progress of work in your<br> apartment. 
@@ -128,14 +126,14 @@
                 <div class="main-wrapper">
                     <div class="name-wrapper">
                         <span class="submit-form__text">Name</span>
-                        <input class="submit-form__input submit-form__input-name input-border-bottom" placeholder="What is your name:"></input>
+                        <input class="submit-form__input submit-form__input-name input-border-bottom" placeholder="What is your name:" required></input>
                     </div>
                     <div class="phone-wrapper">
                         <span class="submit-form__text submit-form__text-desc">Phone</span>
                         <span class="submit-form__text submit-form__text-mob">Number</span>                        
-                        <input class="submit-form__input submit-form__input-phone input-border-bottom" placeholder="Your phone number:"></input>
+                        <input class="submit-form__input submit-form__input-phone input-border-bottom" placeholder="Your phone number:" required></input>
                     </div>
-                    <button class="submit-form__btn orange-btn">
+                    <button class="submit-form__btn orange-btn" type="submit">
                         <span class="submit-form__btn-text">SUBMIT</span>
                     </button>
                 </div>
@@ -233,15 +231,15 @@
                     <div class="free-services__form__fields">
                         <div class="name-block el-block">
                             <span class="el-block__text">Name</span>
-                            <input class="el-block__input input-border-bottom" placeholder="What is your name:"></input>
+                            <input class="el-block__input input-border-bottom" placeholder="What is your name:" required></input>
                         </div>
                         <div class="phone-block el-block">
                             <span class="el-block__text">Phone</span>
-                            <input class="el-block__input input-border-bottom" placeholder="Your phone number:"></input>
+                            <input class="el-block__input input-border-bottom" placeholder="Your phone number:" required></input>
                         </div>
                         <div class="email-block el-block">
                             <span class="el-block__text">Email</span>
-                            <input class="el-block__input input-border-bottom" placeholder="Your email:"></input>
+                            <input class="el-block__input input-border-bottom" placeholder="Your email:" required></input>
                         </div>
                     </div>
                     <div class="free-services__form__bottom-block checkbox-container">
@@ -251,7 +249,7 @@
                         </label>
                         <span class="checkbox-container__span">I agree to the processing of personal data</span>
                     </div>
-                    <button class="free-services__form__btn orange-btn">
+                    <button class="free-services__form__btn orange-btn" type="submit">
                         <span class="free-services__form__btn__txt">Call the measurer</span>
                     </button>
                 </form>
@@ -583,16 +581,16 @@
                 <div class="top-block">
                     <div class="name-input">    
                         <span class="submit-form__text">Name</span>
-                        <input class="submit-form__input submit-form__input-name input-border-bottom" placeholder="What is your name:"></input>
+                        <input class="submit-form__input submit-form__input-name input-border-bottom" placeholder="What is your name:" required></input>
                     </div> 
                     <div class="phone-input"> 
                         <span class="submit-form__text">Phone</span>
-                        <input class="submit-form__input submit-form__input-name input-border-bottom" placeholder="Your phone number:"></input>
+                        <input class="submit-form__input submit-form__input-name input-border-bottom" placeholder="Your phone number:" required></input>
                     </div>
                 </div>
                 <div class="bottom-block">
                     <span class="submit-form__text">Question</span>
-                    <input class="submit-form__input submit-form__input-name input-border-bottom" placeholder="I want to know:"></input>
+                    <input class="submit-form__input submit-form__input-name input-border-bottom" placeholder="I want to know:" required></input>
                 </div>
             </div>
             <label class="container">
@@ -600,7 +598,7 @@
                 <span class="checkmark"></span>
             </label>
             <span class="bottom-block__span">I agree to the processing of personal data</span>
-            <button class="submit-btn orange-btn"><span class="btn-txt">SUBMIT</span></button>
+            <button class="submit-btn orange-btn" type="submit"><span class="btn-txt">SUBMIT</span></button>
         </form>
         <div class="address-block">
             <span class="address-block__span">Rostov-on-Don, Nansen St., 239 Shopping Center<br>
